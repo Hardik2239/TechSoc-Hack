@@ -1,0 +1,74 @@
+body {background-color: #A4DBE8;}
+
+button {
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);  
+}
+
+.container {
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);  
+}
+
+.header {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background: white;
+    color: #A4DBE8;
+    font-size: 30px;
+    height: 60px;
+}
+
+.btnHome {
+    position: relative;
+    width: 20%;
+    height: 50%;
+    top: 25%;
+    left: 40%;
+}
+
+.btnLogout {
+    position: absolute;
+    width: 10%;
+    height: 30px;
+    top: 15px;
+    left: 90%;
+}
+
+a {
+    color: #A4DBE8;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+a:hover,
+a:focus {
+    color: rgba(167, 167, 167, 0.7);
+}
+
+a:active {
+    color: rgba(86, 86, 86, 0.7);
+}
+
+a:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}

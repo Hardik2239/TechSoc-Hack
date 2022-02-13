@@ -1,0 +1,66 @@
+body {background-color: #A4DBE8;}
+
+.container {
+    height: 330px;
+    border-radius: 25px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -165px 0 0 -250px;
+    text-align: center;
+    background-color: none;
+    border: none;
+    border: none;
+    box-shadow: none;  
+    align-items: center;
+}
+
+/* Login button */
+button {
+    position: relative;
+    border-radius: 0;
+    top: 35%;
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    align-items: center;
+    background-color: white;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #A4DBE8;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.login:hover,
+.login:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.login:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.login:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}

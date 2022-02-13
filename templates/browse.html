@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<title>Study Buddies | Browse</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/browse.css') }}">
+{% endblock %}
+{% block content %}
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Event</th>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Start</th>
+            <th>End</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.studentName }}</td>
+            <td>{{ booking.roomName }}</td>
+            <td>{{ booking.bookingName }}</td>
+            <td>{{ booking.subject }}</td>
+            <td>{{ booking.date}}</td>
+            <td>{{ booking.startTime }}</td>
+            <td>{{ booking.endTime }}</td>
+            
+            <td class = "join">
+                <!--
+                <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16", onclick="toggleColour(this)">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                </svg>
+                -->
+                <!---->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" onclick="toggleColour(this)">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+            </td>
+        </tr>
+        {% endfor %}
+        <!-- and so on... template used-->
+    </tbody>
+</table>
+<script src="{{ url_for('static', filename='js/browse.js') }}"></script>
+
+{% endblock %}

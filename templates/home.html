@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <title>StudyBuddies | Home</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <button onclick="clickCreate()">Create Booking</button>
+        <button onclick="clickBrowse()">Find Booking</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+{% endblock %}
